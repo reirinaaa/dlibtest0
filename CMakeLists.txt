@@ -9,5 +9,11 @@ project(dlibtest0)
 add_subdirectory(../dlib dlib_build)
 
 add_executable(learning assignment_learning_ex.cpp)
-
 target_link_libraries(learning dlib::dlib)
+
+add_executable(bayes_net bayes_net_ex.cpp)
+target_link_libraries(bayes_net dlib::dlib)
+
+add_executable(dnn_intro dnn_introduction_ex.cpp)
+target_link_libraries(dnn_intro dlib::dlib)
+
